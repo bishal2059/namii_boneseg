@@ -39,7 +39,7 @@ def main():
     print(f"[Step 2] Segmenting bone (threshold >= {args.threshold} HU)...")
     combined = segment_bone(vol, threshold_hu=args.threshold)
     print(f"  - Voxels in combined mask: {combined.sum()}")
-    combined_path = os.path.join(mask_dir, 'combined_mask.nii.gz')
+    combined_path = os.path.join(mask_dir, 'original_mask.nii.gz')
     save_nifti(combined, affine, hdr, combined_path)
     print(f"  - Saved combined mask: {combined_path}\n")
 
@@ -60,14 +60,14 @@ def main():
     print(f"[Step 5] Randomizing mask within {args.expand1} mm...")
     rnd1 = randomize_mask(combined, exp2, spacing, args.expand1)
     print(f"  - Voxels in randomized mask: {rnd1.sum()}")
-    rnd1_path = os.path.join(mask_dir, 'random1.nii.gz')
+    rnd1_path = os.path.join(mask_dir, 'randomized_mask1.nii.gz')
     save_nifti(rnd1, affine, hdr, rnd1_path)
     print(f"  - Saved randomized mask: {rnd1_path}\n")
 
     print(f"[Step 6] Randomizing mask within {args.expand2} mm...")
     rnd2 = randomize_mask(combined, exp4, spacing, args.expand2)
     print(f"  - Voxels in randomized mask: {rnd2.sum()}")
-    rnd2_path = os.path.join(mask_dir, 'random2.nii.gz')
+    rnd2_path = os.path.join(mask_dir, 'randomized_mask2.nii.gz')
     save_nifti(rnd2, affine, hdr, rnd2_path)
     print(f"  - Saved randomized mask: {rnd2_path}\n")
 

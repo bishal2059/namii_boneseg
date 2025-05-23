@@ -85,10 +85,10 @@ python -m src.main \
 
 * **`results/masks/`**: Contains binary NIfTI masks for:
 
-  * `combined_mask.nii.gz`
+  * `original_mask.nii.gz`
   * `expanded_2mm.nii.gz`
   * `expanded_4mm.nii.gz`
-  * `random1.nii.gz`, `random2.nii.gz`
+  * `randomized_mask1.nii.gz`, `randomized_mask2.nii.gz`
 
 * **`results/landmarks.txt`**: Lists medial and lateral lowest point coordinates for each mask.
 
