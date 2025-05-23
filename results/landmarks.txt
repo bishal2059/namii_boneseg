@@ -1,0 +1,15 @@
+combined_mask 
+, medial: (np.float64(120.81050503253937), np.float64(-11.298924326896667), np.float64(-258.5)),
+ lateral: (np.float64(135.58590173721313), np.float64(-13.037206292152405), np.float64(-252.5))
+expanded_2mm 
+, medial: (np.float64(120.81050503253937), np.float64(-11.298924326896667), np.float64(-262.5)),
+ lateral: (np.float64(135.58590173721313), np.float64(-13.037206292152405), np.float64(-256.5))
+expanded_4mm 
+, medial: (np.float64(120.81050503253937), np.float64(-11.298924326896667), np.float64(-266.5)),
+ lateral: (np.float64(135.58590173721313), np.float64(-13.037206292152405), np.float64(-260.5))
+random1 
+, medial: (np.float64(120.81050503253937), np.float64(-11.298924326896667), np.float64(-262.5)),
+ lateral: (np.float64(135.58590173721313), np.float64(-13.037206292152405), np.float64(-256.5))
+random2 
+, medial: (np.float64(120.81050503253937), np.float64(-11.298924326896667), np.float64(-266.5)),
+ lateral: (np.float64(135.58590173721313), np.float64(-13.037206292152405), np.float64(-260.5))
